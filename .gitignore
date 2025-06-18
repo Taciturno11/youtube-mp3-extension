@@ -1,0 +1,14 @@
+# Ignorar archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Entorno virtual (si existe)
+env/
+
+# Archivos de descarga
+backend/downloads/
+
+# Certificados
+*.pem
+*.key
