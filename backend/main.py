@@ -30,3 +30,9 @@ def descargar_audio(video: VideoURL):
         return FileResponse(mp3_filepath, media_type='audio/mpeg', filename=filename)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+# ────────── Punto de entrada cuando se ejecuta como EXE ──────────
+# ───── Punto de entrada cuando se ejecuta como EXE ─────
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)   # ← usamos la variable app
